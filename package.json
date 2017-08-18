@@ -1,0 +1,45 @@
+{
+  "name": "rollup-analyzer-plugin",
+  "version": "1.0.0",
+  "description": "Analyze file sizes of rollup bundled imports",
+  "files": [
+    "index.js",
+    "module.js"
+  ],
+  "main": "index.js",
+  "module": "module.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doesdev/rollup-analyzer-plugin.git"
+  },
+  "keywords": [
+    "rollup",
+    "import",
+    "bundle",
+    "file",
+    "size",
+    "analysis",
+    "analyze"
+  ],
+  "author": "Andrew Carpenter (https://github.com/doesdev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doesdev/rollup-analyzer-plugin/issues"
+  },
+  "homepage": "https://github.com/doesdev/rollup-analyzer-plugin#readme",
+  "dependencies": {
+    "rollup-analyzer": "^1.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "ghooks": "^2.0.0"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "rollup -c && git add index.js"
+    }
+  }
+}
