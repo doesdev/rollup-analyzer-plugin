@@ -4,14 +4,26 @@
 
 ## rollup-analyzer
 
-This is the rollup plugin version of [rollup-analyzer](https://github.com/doesdev/rollup-analyzer). By adding it as
-a plugin to your config or build script you'll get a nicely formatted analysis
-of imported file sizes logged to your console when bundling.
+Rollup Analyzer gives you a quick look at what's taking up space in your bundle.
+
+### Comes in three scrumptious flavors:
+
+#### [rollup-analyzer-plugin](https://github.com/doesdev/rollup-analyzer-plugin)
+Adding as a plugin to your rollup config or build script will print a well
+formatted analysis to the console upon bundling.
+
+#### [rollup-analyzer-config](https://github.com/doesdev/rollup-analyzer-config)
+If using Rollup's CLI to bundle with no additonal config, pass
+`-c node:rollup-analyzer-config` to print a well formatted analysis to your console.
+
+#### [rollup-analyzer](https://github.com/doesdev/rollup-analyzer)
+Full analysis module, giving you access to the complete analysis object or well
+formatted analysis text for CI and build usage.
 
 ## Install
 
 ```sh
-$ npm install --save rollup-analyzer-plugin
+$ npm install --save-dev rollup-analyzer-plugin
 ```
 
 ## Usage
