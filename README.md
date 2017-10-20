@@ -76,6 +76,10 @@ dependents: 1
 
 ## Options
 
+- **stdout** - *optional*
+  - type: Boolean
+  - default: `false`
+  - description: Print to stdout (console.log) instead of stderr (console.error)
 - **limit** - *optional*
   - type: Number
   - default: `null`

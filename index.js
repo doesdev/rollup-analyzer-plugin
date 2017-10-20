@@ -4,11 +4,14 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var analyzer = _interopDefault(require('rollup-analyzer'));
 
+'use strict';
+
 var module$1 = (opts) => {
+  let log = (opts || {}).stdout ? console.log : console.error;
   return {
     name: 'rollup-analyzer-plugin',
     ongenerate: ({bundle}) => {
-      return analyzer(opts).formatted(bundle).then(console.log)
+      return analyzer(opts).formatted(bundle).then(log)
     }
   }
 };
