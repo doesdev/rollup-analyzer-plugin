@@ -1,6 +1,6 @@
 {
   "name": "rollup-analyzer-plugin",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Analyze file sizes of rollup bundled imports",
   "files": [
     "index.js",
@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/doesdev/rollup-analyzer-plugin#readme",
   "dependencies": {
-    "rollup-analyzer": "^1.0.3"
+    "rollup-analyzer": "^1.1.0"
   },
   "devDependencies": {
     "ava": "^0.22.0",
