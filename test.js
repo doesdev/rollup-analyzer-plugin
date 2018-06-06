@@ -5,9 +5,8 @@ import { rollup } from 'rollup'
 import plugin from './index'
 
 const opts = {
-  entry: 'module.js',
-  dest: 'index.js',
-  format: 'cjs',
+  input: 'module.js',
+  output: {file: 'index.js', format: 'cjs'},
   plugins: [plugin()]
 }
 

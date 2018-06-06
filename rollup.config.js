@@ -3,8 +3,7 @@
 // how meta
 import plugin from './module'
 export default {
-  entry: 'module.js',
-  dest: 'index.js',
-  format: 'cjs',
+  input: 'module.js',
+  output: {file: 'index.js', format: 'cjs'},
   plugins: [plugin()]
 }
