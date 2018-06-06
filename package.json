@@ -1,6 +1,6 @@
 {
   "name": "rollup-analyzer-plugin",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Analyze file sizes of rollup bundled imports",
   "files": [
     "index.js",
@@ -37,6 +37,6 @@
   "devDependencies": {
     "ava": "^0.22.0",
     "husky": "^0.14.3",
-    "rollup": "^0.50.0"
+    "rollup": "^0.60.0"
   }
 }
