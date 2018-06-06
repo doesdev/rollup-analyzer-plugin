@@ -9,7 +9,7 @@
   "main": "index.js",
   "module": "module.js",
   "scripts": {
-    "test": "ava",
+    "test": "rollup -c && ava",
     "precommit": "rollup -c && git add index.js"
   },
   "repository": {

@@ -4,8 +4,6 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var analyzer = _interopDefault(require('rollup-analyzer'));
 
-'use strict';
-
 var module$1 = (opts) => {
   let log = (opts || {}).stdout ? console.log : console.error;
   return {
@@ -14,6 +12,6 @@ var module$1 = (opts) => {
       return analyzer(opts).formatted(bundle).then(log)
     }
   }
-};
+}
 
 module.exports = module$1;
